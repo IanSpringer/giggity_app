@@ -1,5 +1,4 @@
 body {
-  background: #4CA1AF; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
@@ -23,6 +22,9 @@ body {
 
 .signup1 {
   margin-bottom: 20px;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+
+
 }
 
 .login {
@@ -74,7 +76,49 @@ p {
 #links {
   width: 250px;
   margin: auto;
-  text-align: center
+  text-align: center;
+  font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+
+input[type=text] {
+    padding:5px;
+    border:2px solid #333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button {
+  color: #900;
+  border: 1px solid #900;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #FFF;
+  background: #900;
+}
+
+input[type=email] {
+    padding:5px;
+    border:2px solid #333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+
+
+
+input[type=password] {
+    padding:5px;
+    border:2px solid #333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
 }
 
 // Place all the styles related to the users controller here.
