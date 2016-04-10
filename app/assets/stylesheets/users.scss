@@ -1,0 +1,82 @@
+body {
+  background: #4CA1AF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #4CA1AF , #C4E0E5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #4CA1AF , #C4E0E5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}
+
+#sButton {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#lButton {
+  display: inline-block;;
+}
+
+.signup {
+  width: 150px;
+  margin: auto
+}
+
+.signup1 {
+  margin-bottom: 20px;
+}
+
+.login {
+  width: 170px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.button1 {
+  margin-top: 20px
+}
+
+h1 {
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-size: 91px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #003333;
+  margin-bottom: 100px;
+  text-shadow: -1px 0 #6633CC, 0 1px #6633CC, 1px 0 #6633CC, 0 -1px #6633CC;
+  // text-align: center;
+  // font: bold 330%/100% "Lucida Grande";
+  // font-size: 80px;
+  // position: relative;
+  // color: #464646;
+  // color: #fff;
+  // text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+  // font: 80px 'BlackJackRegular';
+}
+strong {
+  color: #6633CC;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+p {
+  color:  #484848;
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  }
+#links {
+  width: 250px;
+  margin: auto;
+  text-align: center
+}
+
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
