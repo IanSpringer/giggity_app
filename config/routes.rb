@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
-  get 'pages/home'
 
-  get 'sessions/new'
 
-  get 'sessions/create'
+  # get 'pages/home'
 
-  get 'sessions/destroy'
+  # get 'sessions/new'
+
+  # get 'sessions/create'
+
+  # get 'sessions/destroy'
 
   #welcome page
   root 'users#index'
