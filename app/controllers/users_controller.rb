@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       password_confirmation: params[:password_confirmation]
       })
 
-      if user.save
+    if user.save
       session[:user_id] = user.id
       redirect_to '/home'
     else

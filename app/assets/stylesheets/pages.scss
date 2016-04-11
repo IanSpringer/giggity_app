@@ -1,3 +1,35 @@
+#p2 {
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  color: #6633CC;
+  font-size: 51px;
+  float: left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#navigation {
+  height: 40px;
+  color: white;
+  padding-top: 20px;
+  background: #282828;
+  width: 100%;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+
+
+.navigationLinks {
+  display: inline-block;
+  float: right;
+  padding-right: 20px;
+}
+
+
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
