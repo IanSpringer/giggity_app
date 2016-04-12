@@ -1,0 +1,15 @@
+<%= form_for @gig do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+
+  <%= f.label :time %>
+  <%= f.datetime_select :time, :ampm => true, :minute_step => 15 %>
+
+  <%= f.label :gig_type %>
+  <%= f.select :gig_type, options_for_select([["Select One", ""], "gigs", "teaching", "shows"]) %>
+
+  <%= f.submit %>
+<% end %>

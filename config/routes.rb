@@ -2,14 +2,6 @@ Rails.application.routes.draw do
 
 
 
-  # get 'pages/home'
-
-  # get 'sessions/new'
-
-  # get 'sessions/create'
-
-  # get 'sessions/destroy'
-
   #welcome page
   root 'users#index'
 
@@ -21,13 +13,27 @@ Rails.application.routes.draw do
 
   post '/signup' => 'users#create'
 
+  get '/user/:id' => 'users#show'
+
+
+
   #login
   get '/login' => 'sessions#new'
 
   post '/login' => 'sessions#create'
 
-  #home
-  get '/home' => 'pages#home'
+  #gigs
+  get '/home' => 'gigs#index'
+
+  get '/gigs' => 'gigs#index'
+
+  get '/gigs/new' => 'gigs#new'
+
+  post '/gigs' => 'gigs#create'
+
+  get '/gigs/:id' => 'gigs#show'
+
+  delete '/gigs' => 'gigs#destroy'
 
 
   # logout

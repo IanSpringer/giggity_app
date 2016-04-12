@@ -1,0 +1,63 @@
+.gigs {
+  margin: 10px;
+  color: black;
+}
+
+
+.gigTitle {
+  font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+
+.postGig {
+  color:  black;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  height: 150px;
+}
+
+#gigSign {
+  color: #003333;
+  height: 100px;
+  float: left;
+  margin-bottom: 100px;
+  width: 100%;
+  text-shadow: -1px 0 #6633CC, 0 1px #6633CC, 1px 0 #6633CC, 0 -1px #6633CC;
+}
+
+.gigDiv {
+  margin-top: 15px;
+  height: 300px;
+  float:left;
+
+
+
+  width: 100%;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+  // opacity: 0.4;
+  overflow: scroll;
+  // filter: alpha(opacity=40); /* For IE8 and earlier */
+
+}
+
+.top {
+  clear: right;
+}
+
+
+
+
+
+// Place all the styles related to the gigs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/

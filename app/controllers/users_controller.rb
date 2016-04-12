@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   def new
   end
 
+  def show
+    @user = User.find_by(params[:id])
+  end
+
   def create
     user = User.new({
       first_name: params[:first_name],
@@ -14,6 +18,9 @@ class UsersController < ApplicationController
       password: params[:password],
       password_confirmation: params[:password_confirmation]
       })
+
+    first_name = params[:first_name]
+    user.first_name = first_name
 
     if user.save
       session[:user_id] = user.id
@@ -27,8 +34,8 @@ class UsersController < ApplicationController
    def home
    end
 
-  end
 
-#   def destroy
-#   end
-# end
+
+  def destroy
+  end
+end

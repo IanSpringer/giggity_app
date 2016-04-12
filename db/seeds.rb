@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+users = User.create({first_name: "John", last_name: "Smith", email: "john@smith.com", password_digest: "1234"})
+gigs = Gig.create({title: "Piano player need", body: "Need piano player", user_id: 3, time: "3:10"})

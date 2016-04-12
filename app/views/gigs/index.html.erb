@@ -1,0 +1,44 @@
+<!-- <div id="navigation">
+  <div class="navigationLinks">Logout</div>
+  <div class="navigationLinks">Messages</div>
+  <div class="navigationLinks">Profile</div>
+  <div class="navigationLinks">Home</div>
+</div> -->
+
+<%= render 'users/home'%>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- <div class="gigs">
+  <h1>Gigs</h1>
+</div> -->
+
+<%= render 'form' %>
+
+<div class="gigDiv">
+
+<form method="POST" action="/gigs">
+     <input name="_method" value="DELETE" type="hidden">
+     <button>Delete</button>
+     </form>
+
+<% @gigs.each do |gig| %>
+
+  <div class="gigs">
+
+   <div class="gigTitle"><%= gig.title %></div>
+
+   <div><%=gig.body%></div>
+
+  </div>
+
+
+<% end %>
+</div>
+
+
+
