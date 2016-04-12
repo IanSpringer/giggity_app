@@ -15,7 +15,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
 
 }
 
-
+button {
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    border-radius: 3px;
+    margin-left: 10px;
+}
 
 #sButton {
   margin-right: 10px;
