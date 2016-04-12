@@ -1,0 +1,15 @@
+
+<h1>
+ Posted by <%= @gig.user.first_name %> <%= @gig.user.last_name %>
+</h1>
+
+<p>Email: <%= @gig.user.email %></p>
+
+<p>Gig type: <%=@gig.gig_type %></p>
+
+<p> <%= @gig.body %> </p>
+
+<h2> Send <%=@gig.user.first_name %> a message
+  <input name="message_send" type="text">
+  <button>Send</button> </h2>
+

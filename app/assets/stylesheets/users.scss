@@ -19,11 +19,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
 
 #sButton {
   margin-right: 10px;
+  margin-top: 20px;
   display: inline-block;
 }
 
 #lButton {
-  display: inline-block;;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .signup {
@@ -57,7 +59,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   color: #6633CC;
   font-size: 71px;
-  margin-top: 20px;
+  margin-top: 50px;
   float: left;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -85,6 +87,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', end
   display: inline-block;
   float: left;
   padding-right: 20px;
+}
+
+#giggity {
+  font-size: 140px;
+  margin-bottom: 20px;
 }
 
 
