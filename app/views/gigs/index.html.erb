@@ -8,18 +8,13 @@
 <br>
 <br>
 
-<!-- <div class="gigs">
-  <h1>Gigs</h1>
-</div> -->
+
 
 <%= render 'form' %>
 
 <div class="gigDiv">
 
-<!-- <form method="POST" action="/gigs">
-     <input name="_method" value="DELETE" type="hidden">
-     <button>Delete</button>
-     </form> -->
+
 
 <% @gigs.each do |gig| %>
 
@@ -27,7 +22,6 @@
 
    <div class="gigTitle"><%= link_to gig.title, gig_path(gig) %> posted by <%= gig.user.first_name %></div>
 
-   <!-- <div><%=gig.body%></div> -->
 
   </div>
 
