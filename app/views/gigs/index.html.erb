@@ -30,7 +30,7 @@
 
   <div class="gigs">
 
-   <div class="gigTitle"><%= gig.title %></div>
+   <div class="gigTitle"><%= link_to gig.title, gig_path(gig) %> posted by <%= gig.user.first_name %></div>
 
    <div><%=gig.body%></div>
 

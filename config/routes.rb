@@ -31,7 +31,7 @@ Rails.application.routes.draw do
 
   post '/gigs' => 'gigs#create'
 
-  get '/gigs/:id' => 'gigs#show'
+  get '/gigs/:id' => 'gigs#show', as: :gig
 
   delete '/gigs' => 'gigs#destroy'
 

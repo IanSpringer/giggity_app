@@ -1,6 +1,6 @@
 class GigsController < ApplicationController
   def index
-    @gigs = Gig.all
+    @gigs = Gig.all.order(created_at: 'DESC')
     @user = User.find(session[:user_id])
     @gig = @user.gigs.new
   end
@@ -11,7 +11,7 @@ class GigsController < ApplicationController
   end
 
   def show
-    @gig = Gig.find_by(params[:id])
+    @gig = Gig.find(params[:id])
   end
 
   def create
