@@ -1,4 +1,5 @@
 
+
   <h1 class="animated fadeInRight">
    Posted by <%= @gig.user.first_name %> <%= @gig.user.last_name %>
   </h1>
@@ -13,12 +14,13 @@
 
 </div>
 
+<% current_user %>
+<% if @current_user.id == @gig.user_id %>
 <div class="deleteGig">
- <form method="POST" action="/gigs/<%= @gig.id %>">
-     <input name="_method" value="DELETE" type="hidden">
-     <button>Delete</button>
-     </form>
-  </div>
+   <%= link_to 'Delete', @gig, method: :delete, data: {confirm: 'Are you sure?'} %>
+</div>
+
+<% end %>
 
 
 <div class="animated fadeInUp" id="message_send"> Send <%=@gig.user.first_name %> a message

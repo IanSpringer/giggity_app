@@ -1,4 +1,6 @@
 class GigsController < ApplicationController
+  before_action :check_owner, only: [:edit, :destroy]
+
   def index
     @gigs = Gig.all.order(created_at: 'DESC')
     @user = User.find(session[:user_id])
@@ -42,11 +44,9 @@ class GigsController < ApplicationController
 
 
   def destroy
-    id = params[:id]
-    user = User.find_by(id: id)
-    gig = Gig.find_by(id: id)
-    gig.destroy
-    redirect_to gigs_path
+    @gig = Gig.find(params[:id])
+    @gig.destroy
+    redirect_to '/gigs'
   end
 
 
@@ -54,6 +54,17 @@ private
 
   def gig_params
     params.require(:gig).permit(:title, :body, :time, :gig_type, :user_id)
+  end
+
+  def check_owner
+    # id = params[:id]
+    @gig = Gig.find(params[:id])
+    @current_user = User.find(session[:user_id])
+      if @current_user.id != @gig.user.id
+
+      # flash.alert = "You can only delete gigs that you have posted"
+      redirect_to '/gigs'
+    end
   end
 end
 
