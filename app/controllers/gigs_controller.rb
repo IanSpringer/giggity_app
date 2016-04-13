@@ -27,7 +27,7 @@ class GigsController < ApplicationController
 
   def edit
     id = params[:id]
-    @user = User.find_by
+    @user = User.find_by(id: id)
     @gig = Gig.find_by(id: id)
     @gig.update
   end
