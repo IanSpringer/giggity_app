@@ -3,14 +3,31 @@
   color: black;
 }
 
+.deleteGig {
+  text-align: center;
+}
+
 #message_send {
   margin-top: 70px;
-  margin-left: 30px;
+  text-align: center;
   font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
+
+}
+
+.homeLink {
+  display: inline-block;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.logoutLink {
+  display: inline-block;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 
 }
 
@@ -69,6 +86,10 @@
   overflow: scroll;
   // filter: alpha(opacity=40); /* For IE8 and earlier */
 
+}
+
+#gigBody {
+  margin: 25px;
 }
 
 .top {

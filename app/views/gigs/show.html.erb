@@ -1,15 +1,31 @@
 
-<h1 class="animated fadeInRight">
- Posted by <%= @gig.user.first_name %> <%= @gig.user.last_name %>
-</h1>
+  <h1 class="animated fadeInRight">
+   Posted by <%= @gig.user.first_name %> <%= @gig.user.last_name %>
+  </h1>
 
-<p class="animated fadeInLeft">Email: <%= @gig.user.email %></p>
+  <p class="animated fadeInLeft">Email: <%= @gig.user.email %></p>
 
-<p class="animated fadeInLeft">Gig type: <%=@gig.gig_type %></p>
+  <p class="animated fadeInLeft">Gig type: <%=@gig.gig_type %></p>
 
-<p class="animated fadeInLeft"> <%= @gig.body %> </p>
+  <p class="animated fadeInRight">Gig time: <%=@gig.time%></p>
+
+  <p class="animated fadeInLeft" id="gigBody"> <%= @gig.body %> </p>
+
+</div>
+
+<div class="deleteGig">
+ <form method="POST" action="/gigs/<%= @gig.id %>">
+     <input name="_method" value="DELETE" type="hidden">
+     <button>Delete</button>
+     </form>
+  </div>
+
 
 <div class="animated fadeInUp" id="message_send"> Send <%=@gig.user.first_name %> a message
-  <input name="message_send" type="text">
-  <button>Send</button> </div>
+  <input name="message_title" type="text" placeholder="Title">
+  <input name="message_body" type="text" placeholder="Message">
+  <button>Send</button>
+ </div>
+
+
 

@@ -32,6 +32,7 @@ class UsersController < ApplicationController
    end
 
    def home
+    redirect_to '/gigs'
    end
 
 

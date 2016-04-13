@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   get '/profile' => 'users#profile'
 
   #gigs
-  get '/home' => 'gigs#index'
+  get '/home' => 'users#home'
 
   get '/gigs' => 'gigs#index'
 
@@ -35,7 +35,7 @@ Rails.application.routes.draw do
 
   get '/gigs/:id' => 'gigs#show', as: :gig
 
-  delete '/gigs' => 'gigs#destroy'
+  delete '/gigs/:id' => 'gigs#destroy'
 
 
   # logout
