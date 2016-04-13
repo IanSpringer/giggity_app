@@ -18,7 +18,7 @@
 
 <% @gigs.each do |gig| %>
 
-  <div class="gigs">
+  <div class="animated fadeIn" id="gigs">
 
    <div class="gigTitle"><%= link_to gig.title, gig_path(gig) %> posted by <%= gig.user.first_name %></div>
 

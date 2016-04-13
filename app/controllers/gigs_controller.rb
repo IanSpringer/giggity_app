@@ -25,6 +25,13 @@ class GigsController < ApplicationController
 
   end
 
+  def edit
+    id = params[:id]
+    @user = User.find_by
+    @gig = Gig.find_by(id: id)
+    @gig.update
+  end
+
   def destroy
     id = params[:id]
     gig = Gig.find_by(id: id)
