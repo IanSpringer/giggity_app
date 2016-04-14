@@ -46,7 +46,7 @@ class GigsController < ApplicationController
   def destroy
     @gig = Gig.find(params[:id])
     @gig.destroy
-    redirect_to '/gigs'
+    redirect_to gigs_path
   end
 
 

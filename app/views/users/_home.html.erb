@@ -1,32 +1,25 @@
 <% if current_user %>
 
- <container>
   <div class="animated fadeIn">
-    <div class="navigationLinks"> <form action='/logout' method='post'>
-      <input name="_method" value="DELETE" type="hidden">
-      <!-- <button>Logout</button> -->
+    <div class="navigationLinks">
+      <form action='/logout' method='post'>
+        <input name="_method" value="DELETE" type="hidden">
       </form>
     </div>
   </div>
 
-<div class="animated fadeInLeft" id="welcome">
-  <p id="p2">Welcome <%=current_user.first_name if current_user%></p>
-</div>
+  <div class="animated fadeInLeft" id="welcome">
+    <p id="p2">Welcome <%=current_user.first_name if current_user%></p>
+  </div>
 
-
-
-
-<!--  <form action='/logout' method='post'>
-      <input name="_method" value="DELETE" type="hidden">
-      <button>Logout</button>
-      </form> -->
 <% else %>
+
   <a href="/login">Login</a>
   <a href="/signup">Signup</a>
 
 <% end %>
 
-</container>
+
 
 
 

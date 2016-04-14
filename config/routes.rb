@@ -25,7 +25,6 @@ Rails.application.routes.draw do
   get '/profile' => 'users#profile'
 
   #gigs
-  get '/home' => 'users#home'
 
   get '/gigs' => 'gigs#index'
 
