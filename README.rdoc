@@ -17,4 +17,4 @@ A new feature of Giggity is the ability to add a user profile. If a user is sign
 
 Welcome to giggity and happy gigging!
 
-
+Get Giggity here: https://giggity-app.herokuapp.com/
