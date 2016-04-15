@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get '/welcome' => 'users#index'
 
+  get '/users/:id/profile' => 'users#show'
 
   #signup
   get '/signup' => 'users#new'

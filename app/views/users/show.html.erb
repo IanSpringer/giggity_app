@@ -1,0 +1,19 @@
+
+<div class="div2">
+
+<% if @user.profile.nil? %>
+ <p>It looks like they don't have a profile yet.</p>
+ </div>
+ </div>
+
+<% else %>
+  <h1><%=@user.first_name %>'s Profile</h1>
+  <%= image_tag @user.profile.avatar.url(:medium) %>
+  <h3><strong>Name:</strong> <%=@user.first_name%> <%=@user.last_name %></h3>
+  <h3><strong>Email:</strong> <%=@user.email%>
+  <h3><strong>Date of Birth:</strong> <%=@user.profile.dob %></h3>
+  <h3><strong>Bio:</strong> <%= @user.profile.bio %></h3>
+  <h3><strong>Website:</strong> <%= @user.profile.website %></h3>
+<% end %>
+
+</div>

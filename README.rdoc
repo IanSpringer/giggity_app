@@ -1,28 +1,20 @@
-== README
+Welcome to Giggity!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose for Giggity is to help musician's find gigs and network with other music minded people.
 
-Things you may want to cover:
+When you visit Giggity, you will be greeted with a home page, giving first-time users the ability to sign up, and returning users
+the ability to login. After logging into the site, You will greeted by the Giggity dashboard.
 
-* Ruby version
+In the dashboard, you will see the latest gigs that have been posted by users, as well as a form to post your own gigs should you have any.
+You have the option of posting 3 separate types of gigs, all with different purposes. "Gig" gigs are the bread an butter of the app. These are performance opportunities, whether it be a
+band looking for a new drummer, or a couple looking to hirea funk group to play at their wedding. "Teaching" gigs are intended
+to find available teaching work for musicians. "Shows" gigs are for musicians promoting their upcoming show, allowing users who are simply looking for some entertainment to see who's performing where.
 
-* System dependencies
+If a user sees a gig that interestes them, they have the option of clicking on the title of the gig, which will lead them to the details of the gig. Let's say a guitarist posts a gig needing a singer for
+an upcoming gig, but realized they entered in the wrong date for the gig, or the venue owner double booked them that night. No problem. The 'delete' and 'edit' options allow the user to control the status of their gig.
 
-* Configuration
+A new feature of Giggity is the ability to add a user profile. If a user is signing in for the first time, they can simply click on the "profile" link and update their info.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Welcome to giggity and happy gigging!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
