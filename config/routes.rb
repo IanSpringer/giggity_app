@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-
+  get 'profiles/create'
 
   #welcome page
   root 'users#index'
@@ -22,9 +22,15 @@ Rails.application.routes.draw do
 
   post '/login' => 'sessions#create'
 
-  get '/profile' => 'users#profile'
+  get '/profiles' => 'profiles#index'
 
-  #gigs
+  get '/profile' => 'profiles#show'
+
+  post '/profiles' => 'profiles#create'
+
+
+
+  # gigs
 
   get '/gigs' => 'gigs#index'
 
@@ -35,6 +41,10 @@ Rails.application.routes.draw do
   get '/gigs/:id' => 'gigs#show', as: :gig
 
   delete '/gigs/:id' => 'gigs#destroy'
+
+  get '/gigs/:id/edit' => 'gigs#edit'
+
+  patch 'gigs/:id' => 'gigs#update'
 
 
   # logout

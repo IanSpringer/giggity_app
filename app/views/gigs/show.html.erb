@@ -16,9 +16,13 @@
 
 <% current_user %>
 <% if @current_user.id == @gig.user_id %>
+
 <div class="deleteGig">
    <%= link_to 'Delete', @gig, method: :delete, data: {confirm: 'Are you sure?'} %>
+   <%= link_to 'Edit', "/gigs/#{@gig.id}/edit" %>
 </div>
+
+
 
 <% end %>
 

@@ -18,9 +18,13 @@
   <div class="logoutLink">
       <%= link_to("Logout", "/logout", method: :delete) %>
   </div>
-    <% end %>
-  </nav>
 
+  <div class="profileLink">
+      <%= link_to 'Profile', profile_path %>
+  </div>
+    <% end %>
+
+  </nav>
 <%= yield %>
 
 </body>

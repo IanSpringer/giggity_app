@@ -29,11 +29,15 @@ class GigsController < ApplicationController
   end
 
   def edit
+    @gig = Gig.find(params[:id])
 
   end
 
   def update
-    @gig = Gig.new(bean_params)
+    # this wasn't working because i was instatiating a new
+    # gig instead of finding one in the db and then updateing that one
+    @gig = Gig.find(params[:id])
+    @gig.update(gig_params)
 
     if @gig.save
       redirect_to gig_path(@gig)

@@ -183,6 +183,12 @@ input[type=password] {
     border-radius: 5px;
 }
 
+.profileLink {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+}
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
