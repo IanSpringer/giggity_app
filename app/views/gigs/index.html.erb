@@ -21,7 +21,7 @@
   <% @gigs.each do |gig| %>
   <div class="animated fadeIn" id="gigs">
     <div class="gigTitle">
-    <%= link_to gig.title, gig_path(gig) %> posted by <%= link_to gig.user.first_name %>
+    <%= link_to gig.title, gig_path(gig) %> posted by <%= link_to gig.user.first_name, profile_path %>
     </div>
   </div>
   <% end %>

@@ -5,9 +5,10 @@
  <p>It looks like you don't have a profile yet. Let's build one so people can connect with you</p>
   <%= render 'new' %>
 <% else %>
-  <%= image_tag current_user.profile.avatar.url(:medium) %>
   <h1><%=current_user.first_name %>'s Profile</h1>
+  <%= image_tag current_user.profile.avatar.url(:medium) %>
   <h3><strong>Name:</strong> <%=current_user.first_name%> <%=current_user.last_name %></h3>
+  <h3><strong>Email:</strong> <%=current_user.email%>
   <h3><strong>Date of Birth:</strong> <%=current_user.profile.dob %></h3>
   <h3><strong>Bio:</strong> <%= current_user.profile.bio %></h3>
   <h3><strong>Website:</strong> <%= current_user.profile.website %></h3>
